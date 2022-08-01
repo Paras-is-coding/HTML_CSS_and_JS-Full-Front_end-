@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility&z-index</title>
+    <style>
+        .division{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        #div-1{
+            background-color: blue;
+        }
+        #div-2{
+            background-color: red;
+            visibility: hidden;/*this will just hide object space is still there*/
+            /* display: none;  this will remove space also */
+        }
+        #div-3{
+            background-color: orangered;
+            position: relative;/*z-index only works if we provide position*/
+            z-index: 2;
+        }
+        #div-4{
+            background-color: grey;
+            position: relative;
+            bottom: 50px;
+            z-index: 1;
+        }
+        #div-5{
+            position: relative;
+            z-index: -2;
+            background-image: url("picture.jpg");
+            height: 500px;
+            width: 500px;
+            background-size: 100% 100%;
+            
+        }
+        #div-6{
+            background-color: blanchedalmond;
+        }
+        #div-5 img{
+            position: absolute;
+            top: 50px;
+            z-index: -1;
+            size: 200px 200px;
+            width: 200px;            
+            height: 200px;
+        }
+        #div-5 p,h2{
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="division" id="div-1"></div>
+    <div class="division" id="div-2"></div>
+    <div class="division" id="div-3"></div>
+    <div class="division" id="div-4"></div>
+    <div class="division" id="div-5">
+        <h2>This is heading</h2>
+        <p>This is my room and is is beautiful.
+            I decorated it with my own hands.
+            Here I also put some plants in table,
+            this gives me feel of nature and freshness.
+        </p>
+        <img src="picture.jpg" alt="Picture of a room">
+    </div>
+    <div class="division" id="div-6"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#para1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+/* span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cursive_blue{
+    font-family: 'Brush script MT',cursive;
+    font-display:blue;
+    font-size: 2em;
+    line-height: 1em;
+} */
+#para2{
+    font-style: italic;
+}
+#para3{
+    font-weight: bold;
+}
+#para4{
+    font-size:20px;
+}
+#para5{
+    font-variant: small-caps;
+}
+#para6{
+    font-size: 1.5em;
+    line-height:1.2em;
+}

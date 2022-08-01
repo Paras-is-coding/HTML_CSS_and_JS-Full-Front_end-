@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_using_flexbox</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Uchen&display=swap" rel="stylesheet">
+
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+            /* font-family: 'Uchen', serif; */
+        }
+        .header{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .navigation{
+            margin: 1.1em;
+        }
+        .header img{ 
+            border-radius: 1em;       
+            margin: 1em;
+            margin-left: 3em;
+            width: 8em;
+            height: 4em;
+        }
+        header .navigation li{
+            margin: 1em 2em;
+            display: inline-block;
+        }
+        header .navigation li a{
+            text-decoration: none;
+            list-style: none;
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+
+        }
+        header .navigation li a:hover{
+            color: rgb(198, 165, 165);
+        }
+        header .ctbtn{
+            margin: 1em;
+            margin-right: 3em; 
+            background-color:aliceblue;         
+
+        }
+        header .ctbtn:hover button{/*i applied effect to button bot div has a reason*/
+            box-shadow: 0.5em 1em 1em black;
+                        
+        }
+        
+        
+        header .ctbtn button{
+            background-color: rgb(42, 137, 67);
+            font-family: 'Kanit', sans-serif;
+            border-radius: 1em;
+            width: 6em;
+            height: 4em;
+        }
+
+    </style>    
+</head>
+<body>
+    <header class="header">
+            <img src="picture.jpg" alt="Paras" id="logo_img">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="ctbtn"><button>Contact</button></a>
+    </header>
+    
+</body>
+</html>

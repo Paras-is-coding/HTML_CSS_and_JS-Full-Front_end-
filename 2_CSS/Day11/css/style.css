@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: white;
+    background-image: url("/Day11/images/back1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: ;
+    height: 50%;
+}
+
+.header .logo{
+    display: inline-block;
+}
+.header .menu{
+    display: inline-block;
+}
+.header .right{
+    display: inline-block;
+}
+
+.header #nav_logo{
+    height: 50px;
+    width: 50px;
+
+}

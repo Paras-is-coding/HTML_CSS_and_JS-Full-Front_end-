@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(picture.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.menu_bar{
+    background-color:rgb(186, 215, 240);
+    text-align: center;
+}
+.menu_bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu_bar ul li{
+    width: 130px;
+    margin: 15px;
+    padding: 15px; 
+
+}
+.menu_bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active , .menu_bar ul li:hover{
+    background-color: rgb(62, 111, 154);
+}
+
+.menu_bar .fa-solid{
+    margin-right: 6px;
+}
+
+.sub_menu_1 {
+    display: none;
+}
+.menu_bar  ul li:hover .sub_menu_1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(113, 165, 209);  
+    margin-top: 15px;  
+    border-radius: 4px;
+
+}
+
+.menu_bar  ul li:hover .sub_menu_1 ul{
+    display: block;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.menu_bar  ul li:hover .sub_menu_1 ul li{
+    width: 200px;
+    height: 80px;
+    border-bottom: 2px dashed rgb(96, 135, 213);
+}
+.menu_bar  ul li:hover .sub_menu_1 ul li:last-child{
+    border:none;
+}
+.fa-angle-right{
+    float: right;
+}
+
+
+.sub_menu_2{
+    display: none;
+}
+.hover_me:hover .sub_menu_2{
+    display:block;
+    position: absolute;
+    left:200px;
+    background-color: rgb(113, 165, 209);  
+    margin-top: 15px;  
+    border-radius: 4px;
+}
+
+form{
+    height: 8rem;
+    width: 20rem;
+}
+
+.form{
+    display: block;
+    margin:30px;
+}

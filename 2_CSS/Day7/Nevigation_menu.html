@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevigation Menu</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: rgb(33, 90, 125);
+            border: 4px solid black;
+            border-radius: 8px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            list-style: none;
+            float: left;     
+            
+        }
+        .navbar li a{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin: 50px;
+        }
+        .navbar li a:hover{
+            color: black;
+            
+        }
+       
+        .navbar  input{
+            border: 2px solid black; 
+            border-radius: 6px;
+            float: right;
+            margin: 6px 20px 5px 5px;           
+        }
+
+        .top{
+
+            border: 2px solid rgb(37, 68, 95);
+            margin-top: 12px;          
+        }
+        
+
+        img{
+            display: block;
+            border: 2px solid black;
+            border-radius: 500px;
+            border-top-left-radius: 1000px;
+            border-top-right-radius: 1000px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 5px;
+    
+        }
+
+
+
+        .top h1{
+            display: inline-block;
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            width:100%;
+            margin: auto;
+            text-align: center;
+            
+           
+        }
+
+
+        .division{
+            border: 3px solid rgb(194, 184, 229);
+            width:30%;
+            float:left;
+            margin: 4px;
+            margin-top: 50px;
+                    }
+        .division h2{
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <header class="header">
+    <nav class="navbar">
+        <ul>            
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a href="#" class="nav_link">Menu</a></li>
+            <li><a href="#" class="nav_link">Services</a></li>
+            <li><a href="#" class="nav_link">Contact Us</a></li>
+            <div  class="search_bar">
+                <input type="text" name="search" id="search" placeholder="Search more info">
+            </div>
+
+        </ul>
+    </nav> 
+    <div class="top">
+        <img src="logo.png" name="image" id="logo">    
+    <h1>Welcome to Paras-Is-Coding</h1>
+    </div>
+   </header>   
+
+
+   <section>
+
+    <div class="division">
+        <h2>Paragraph first</h2>
+        <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, commodi quasi consequatur quibusdam autem voluptates? Accusamus maiores hic quas, consequatur quos dicta neque. Perspiciatis sunt hic delectus ea! Minus alias numquam minima quam odit quas animi praesentium fugit error iure.</p>
+    </div>
+    <div class="division">
+        <h2>Paragraph second</h2>
+        <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laudantium blanditiis pariatur, id eos quibusdam quam asperiores velit omnis consequatur aperiam nihil dolorem fugit illum dolor aliquid ea voluptatum officia corrupti porro magni saepe quidem. Laboriosam animi molestias quas quidem.</p>
+
+    </div>
+    <div class="division">
+        <h2>Third Paragraph</h2>
+        <p id="para3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nulla et rem mollitia, beatae aut, obcaecati ullam maiores cumque sapiente dolores doloribus tempora laudantium iusto facilis vitae nesciunt. Quam labore rem accusamus mollitia nemo cupiditate numquam voluptate asperiores perspiciatis enim!</p>
+    </div>
+
+   </section>
+</body>
+</html>

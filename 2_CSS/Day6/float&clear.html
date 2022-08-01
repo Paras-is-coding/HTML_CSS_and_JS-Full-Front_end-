@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment in CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aliceblue;
+            border: 4px dotted rgb(45, 6, 6);
+            width: 100%;
+            margin: auto;
+        }
+        .division{
+            border: 3px solid darkblue;
+            margin: 40px 20px;
+            padding: 10px 20px;
+        }
+        .para{
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight: 400;
+            
+
+        }
+        .heading{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: x-large;
+            border: 3px dotted grey;
+            width: 200px;
+            
+            
+        }
+        #para2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #div1{
+            float: left;
+            width: 40%;
+        }
+        #div2{
+            float:left;
+            width: 45%;
+            
+        }
+        #div3{
+            
+            width: 80%;
+            clear: both;
+            
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="div1" class="division">
+            <h3 class="heading">First Heading</h3>
+        <p id="para1" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quo, nam illum quam repudiandae minus reiciendis maiores sunt sit animi nobis quidem eveniet necessitatibus voluptates odit quae excepturi atque illo.</p>
+        </div>
+
+        <div id="div2" class="division">
+            <h3 class="heading">Second heading</h3>
+        <p id="para2" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ullam eveniet ipsa accusamus. Hic, illo beatae assumenda inventore consequatur facilis odio. In officiis vitae odio exercitationem libero, recusandae consectetur ipsam.</p>
+        </div>
+
+      <div id="div3" class="division">
+        <h3 class="heading">Third Heading</h3>
+        <p id="para3" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto omnis dolor aliquam corrupti vel ut repellat consectetur, quo fugiat molestias rerum sunt harum repellendus ipsa dicta amet dolorem molestiae error!</p>
+      </div>
+    </div>
+</body>
+</html>
